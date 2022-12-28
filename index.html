@@ -1,24 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-  
-  <title>Mahdi's Project</title>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
-</head>
-<body>
+    <title>Mahdi's Project</title>
 
-  Home
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <!-- navbar starts here -->
+
+    <nav class="navbar">
+      <img src="images/logo.svg" alt="" class="nav__logo" />
+
+      <ul class="list nav__list">
+        <li class="nav__item">
+          <a href="#" class="link__primary nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="link__primary nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="link__primary nav__link">Contact</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="link__primary nav__link">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="link__primary nav__link">Career</a>
+        </li>
+      </ul>
+      <div class="nav__hamburger">
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+      </div>
+      <button class="btn__primary nav__btn">Request Invite</button>
+    </nav>
+
+    <!-- Hero section starts here -->
+    <section class="hero">
+      <div class="grid2x1">
+        <div class="images">
+          <picture class="hero__image">
+            <source
+              media="(max-width: 768px)"
+              srcset="images/bg-intro-mobile.svg"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="images/bg-intro-desktop.svg"
+            />
+            <img src="images/bg-intro-mobile.svg" alt="" />
+          </picture>
+
+          <div class="hero__mobile">
+            <picture class="hero__image_fixed">
+              <source
+                media="(max-width: 768px)"
+                srcset="images/image-mockups.png"
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="images/image-mockups.png"
+              />
+              <img class="hero__mobile" src="images/image-mockups.png" alt="" />
+            </picture>
+          </div>
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__heading title">Next generation digital banking</h1>
+          <p class="hero__text">
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <button class="btn__primary">Request Invite</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- features starts here -->
+
+    <section class="features">
+      <div class="container">
+        <h2 class="features__title title">Why choose Easybank?</h2>
+        <p class="features__text text">
+          We leverage Open Banking to turn your bank account intor your
+          financial hub.Control your finances like never before.
+        </p>
+
+        <div class="grid4x1">
+          <div class="media">
+            <img
+              src="images/icon-online.svg"
+              alt="currency image"
+              class="media__image"
+            />
+            <h3 class="media__title">Online Banking</h3>
+            <p class="media__text">
+              Our modern web and mobile applications allow you to keep track of
+              your finances wherever you are in the world
+            </p>
+          </div>
+          <div class="media">
+            <img
+              src="images/icon-online.svg"
+              alt="currency image"
+              class="media__image"
+            />
+            <h3 class="media__title">Online Banking</h3>
+            <p class="media__text">
+              Our modern web and mobile applications allow you to keep track of
+              your finances wherever you are in the world
+            </p>
+          </div>
+          <div class="media">
+            <img
+              src="images/icon-online.svg"
+              alt="currency image"
+              class="media__image"
+            />
+            <h3 class="media__title">Online Banking</h3>
+            <p class="media__text">
+              Our modern web and mobile applications allow you to keep track of
+              your finances wherever you are in the world
+            </p>
+          </div>
+          <div class="media">
+            <img
+              src="images/icon-online.svg"
+              alt="currency image"
+              class="media__image"
+            />
+            <h3 class="media__title">Online Banking</h3>
+            <p class="media__text">
+              Our modern web and mobile applications allow you to keep track of
+              your finances wherever you are in the world
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- article section starts here -->
+    <section class="articles">
+      <div class="container">
+        <h2 class="articles__title title">Latest Articles</h2>
+
+        <div class="grid4x1">
+          <article class="card">
+            <img
+              src="images/image-currency.jpg"
+              alt="restaurant image"
+              class="card_image"
+            />
+
+            <div class="card__content">
+              <span class="card_writer">By Wilson Hutton</span>
+              <h3 class="card_title">
+                <a href="#" class="link__primary"
+                  >Treat yourself without worrying about money</a
+                >
+              </h3>
+              <p class="card_text">
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you...
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="images/image-restaurant.jpg"
+              alt="restaurant image"
+              class="card_image"
+            />
+
+            <div class="card__content">
+              <span class="card_writer">By Wilson Hutton</span>
+              <h3 class="card_title">
+                <a href="#" class="link__primary"
+                  >Treat yourself without worrying about money</a
+                >
+              </h3>
+              <p class="card_text">
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you...
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="images/image-plane.jpg"
+              alt="restaurant image"
+              class="card_image"
+            />
+
+            <div class="card__content">
+              <span class="card_writer">By Wilson Hutton</span>
+              <h3 class="card_title">
+                <a href="#" class="link__primary"
+                  >Treat yourself without worrying about money</a
+                >
+              </h3>
+              <p class="card_text">
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you...
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="images/image-confetti.jpg"
+              alt="restaurant image"
+              class="card_image"
+            />
+
+            <div class="card__content">
+              <span class="card_writer">By Wilson Hutton</span>
+              <h3 class="card_title">
+                <a href="#" class="link__primary"
+                  >Treat yourself without worrying about money</a
+                >
+              </h3>
+              <p class="card_text">
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you...
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- footer starts here -->
+    <footer class="footer">
+      <div class="grid__firstcolumn">
+        <img src="images/logo1.svg" alt="" class="footer__logo" />
+
+        <div class="foootr__icons">
+          <svg class="icon icon__white">
+            <use xlink:href="images/sprite.svg#icon-facebook"></use>
+          </svg>
+          <svg class="icon icon__white">
+            <use xlink:href="images/sprite.svg#icon-youtube"></use>
+          </svg>
+          <svg class="icon icon__white">
+            <use xlink:href="images/sprite.svg#icon-twitter"></use>
+          </svg>
+          <svg class="icon icon__white">
+            <use xlink:href="images/sprite.svg#icon-pinterest"></use>
+          </svg>
+          <svg class="icon icon__white">
+            <use xlink:href="images/sprite.svg#icon-instagram"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="footer__links__container">
+        <a href="" class="footer_link link__primary">Contact</a>
+        <a href="" class="footer_link link__primary">About us</a>
+        <a href="" class="footer_link link__primary">Blog</a>
+      </div>
+      <div class="footer__links__container">
+        <a href="" class="footer_link link__primary">Career</a>
+
+        <a href="" class="footer_link link__primary">Support</a>
+        <a href="" class="footer_link link__primary">Privacy Policy</a>
+      </div>
+      <div class="grid__lastcolumn">
+        <button class="btn__primary">Request Invite</button>
+        <div class="copyright">&copyEasyBank.All rights reserved</div>
+      </div>
+    </footer>
+
+    <!-- Home
   About
   Contact
   Blog
@@ -30,17 +315,14 @@
 
   Next generation digital banking
 
-  Take your financial life online. Your Easybank account will be a one-stop-shop 
-  for spending, saving, budgeting, investing, and much more.
+  
 
-  Request Invite
-
+ 
 
 
-  Why choose Easybank?
 
-  We leverage Open Banking to turn your bank account into your financial hub. Control 
-  your finances like never before.
+
+
 
   Online Banking
   Our modern web and mobile applications allow you to keep track of your finances 
@@ -60,7 +342,7 @@
 
   
 
-  Latest Articles
+  
 
   By Claire Robinson
   Receive money in any currency with no fees
@@ -98,6 +380,6 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </div> -->
+  </body>
 </html>
